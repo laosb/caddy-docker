@@ -3,7 +3,7 @@ MAINTAINER Abiola Ibrahim <abiola89@gmail.com>
 
 LABEL caddy_version="0.9.5" architecture="amd64"
 
-ARG plugins=git
+ARG plugins=cors%2Cexpires%2Cratelimit
 
 RUN apk add --no-cache openssh-client git tar curl
 
