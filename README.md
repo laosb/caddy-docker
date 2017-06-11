@@ -1,6 +1,6 @@
 # caddy
 
-A [Docker](http://docker.com) image for [Caddy](http://caddyserver.com). This image includes the [git](http://caddyserver.com/docs/git) plugin.  Plugins can be configured via the `plugins` build arg.
+A [Docker](https://docker.com) image for [Caddy](https://caddyserver.com). This image includes the [git](https://caddyserver.com/docs/http.git) plugin.  Plugins can be configured via the `plugins` build arg.
 
 [![](https://images.microbadger.com/badges/image/abiosoft/caddy.svg)](https://microbadger.com/images/abiosoft/caddy "Get your own image badge on microbadger.com")
 
@@ -43,7 +43,7 @@ Above, we utilize the `CADDYPATH` environment variable to define a different loc
 certificates to be stored. This is probably the safest option as it ensures any future docker image changes don't interfere with your ability to save certificates!
 
 ### PHP
-`:[<version>-]php` variant of this image bundles PHP-FPM alongside essential php extensions and [composer](https://getcomposer.org). e.g. `:php`, `:0.8.0-php`
+`:[<version>-]php` variant of this image bundles PHP-FPM alongside essential php extensions and [composer](https://getcomposer.org). e.g. `:php`, `:0.9.5-php`
 ```sh
 $ docker run -d -p 2015:2015 abiosoft/caddy:php
 ```
@@ -62,7 +62,7 @@ Your `Caddyfile` must include the line `startup php-fpm7`. For Caddy to be PID 1
 
 ### Using git sources
 
-Caddy can serve sites from git repository using [git](https://caddyserver.com/docs/git) plugin.
+Caddy can serve sites from git repository using [git](https://caddyserver.com/docs/http.git) plugin.
 
 ##### Create Caddyfile
 
