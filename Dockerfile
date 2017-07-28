@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
-LABEL caddy_version="0.10.3" architecture="amd64"
+LABEL caddy_version="0.10.5" architecture="amd64"
 
 ARG plugins=http.cors,http.git,http.ratelimit
 
